@@ -1,0 +1,16 @@
+.wallpaper{
+    -fx-background-color: linear-gradient(to top left, #008000, #2F4F4F);
+}
+
+.fields{
+-fx-background-radius: 30;
+    -fx-background-color: lavender;
+    opacity: 0.6;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0,0.0,0.0,10.0);
+}
+
+.buttons{
+    -fx-background-color: darkslategrey;
+    -fx-background-radius: 30;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0,0.0,0.0,10.0);
+}

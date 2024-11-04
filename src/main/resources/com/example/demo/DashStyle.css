@@ -1,0 +1,73 @@
+.wallpaper{
+    -fx-background-radius: 20;
+    -fx-background-color: linear-gradient(to top, #008000, #2F4F4F);
+}
+
+.side-bar {
+    -fx-background-radius: 20;
+        -fx-background-color: linear-gradient(to top right, #008000, #2F4F4F);
+}
+.table-back{
+    -fx-background-radius: 20;
+    -fx-background-color: #008000;
+}
+.table-view {
+    /*-fx-background-radius: 20;*/
+    -fx-background-color: #2F4F4F;
+    opacity: 0.9;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-color: transparent transparent #008000 transparent;
+}
+
+.table-view .column-header{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label{
+    -fx-text-fill: white;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20;
+}
+
+.buttons{
+    -fx-background-color: darkslategrey;
+    -fx-background-radius: 30;
+}
+.logout{
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+}
+
+.list {
+    -fx-background-radius: 20;
+    -fx-background-color: linear-gradient(to top left, #008000, #2F4F4F);
+}
+.combo-box {
+    -fx-background-color: #2F4F4F;
+    -fx-text-fill: white;
+    -fx-background-radius: 30;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0,0.0,0.0,10.0);
+}
+.card {
+    -fx-background-radius: 20;
+        -fx-background-color:#2F4F4F;
+}
+.search-box{
+    -fx-background-color:lavender;
+    -fx-effect: dropShadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);
+    -fx-background-radius: 100;
+}
+.search-button{
+    -fx-background-color: #2F4F4F;
+    -fx-background-radius: 30;
+}
+.top-bar {
+    -fx-background-color: linear-gradient(to top, #008000, #2F4F4F);
+}

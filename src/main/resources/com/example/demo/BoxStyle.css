@@ -1,0 +1,38 @@
+.sidebar{
+    -fx-background-color: linear-gradient(to bottom right, #008000, #2F4F4F);
+}
+
+.buttons{
+    -fx-background-color: lavender;
+    -fx-background-radius: 30;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0,0.0,0.0,10.0);
+}
+
+.wallpaper {
+    -fx-background-radius: 20;
+    -fx-background-color: linear-gradient(to top left, #008000, #2F4F4F);
+}
+
+.pane-style {
+    -fx-background-radius: 20;
+    -fx-background-color: #2F4F4F;
+}
+
+.combo-box {
+    -fx-background-color: lavender;
+    -fx-background-radius: 30;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0,0.0,0.0,10.0);
+}
+.date-picker {
+    -fx-background-color: #1a1a1a;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: lavender;
+    -fx-text-fill: #e0e0e0;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #2F4F4F;
+    -fx-text-fill: #0d0d0d;
+}

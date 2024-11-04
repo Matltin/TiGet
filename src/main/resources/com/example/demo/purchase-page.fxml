@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.PurchaseController">
+   <right>
+      <VBox prefHeight="200.0" prefWidth="420.0" style="-fx-background-color: #2F4F4F;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="420.0">
+               <children>
+                  <Label fx:id="movieTitle" prefHeight="36.0" prefWidth="385.0" text="Oppenheimer" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="35.0" top="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="420.0">
+               <children>
+                  <ImageView fx:id="moviePoster" fitHeight="500.0" fitWidth="356.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Oppenheimer_(film).jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="50.0" prefWidth="420.0">
+               <children>
+                  <Label text="Theater:" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="theaterTitle" text="-" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="420.0">
+               <children>
+                  <Label text="Phone number:" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="theaterPhoneNumber" text="-" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="90.0" prefWidth="420.0">
+               <children>
+                  <Label text="Address:" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="theaterLocation" fill="WHITE" fontSmoothingType="LCD" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="281.7294921875">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="wallpaper" stylesheets="@styling.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="50.0" layoutY="68.0" text="Screenings:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="label" layoutX="52.0" layoutY="285.0" text="Seats:" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="seatArrangement" layoutX="49.0" layoutY="306.0" prefHeight="480.0" prefWidth="763.0" styleClass="card" stylesheets="@DashStyle.css" visible="false">
+               <children>
+                  <Label layoutX="86.0" layoutY="41.0" text="A" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="81.0" text="B" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="121.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="161.0" text="D" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="201.0" text="E" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="241.0" text="F" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="281.0" text="G" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="127.0" layoutY="14.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="167.0" layoutY="14.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="207.0" layoutY="14.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="247.0" layoutY="14.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="534.0" layoutY="18.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="574.0" layoutY="18.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="614.0" layoutY="18.0" text="11" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="654.0" layoutY="18.0" text="12" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="331.0" layoutY="14.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="371.0" layoutY="14.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="411.0" layoutY="14.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="451.0" layoutY="14.0" text="8" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="A1" layoutX="123.0" layoutY="43.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A2" layoutX="163.0" layoutY="43.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A3" layoutX="203.0" layoutY="43.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A4" layoutX="243.0" layoutY="43.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B1" layoutX="123.0" layoutY="83.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B2" layoutX="163.0" layoutY="83.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B3" layoutX="203.0" layoutY="83.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B4" layoutX="243.0" layoutY="83.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C1" layoutX="123.0" layoutY="123.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C2" layoutX="163.0" layoutY="123.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C3" layoutX="203.0" layoutY="123.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C4" layoutX="243.0" layoutY="123.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D1" layoutX="123.0" layoutY="163.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D2" layoutX="163.0" layoutY="163.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D3" layoutX="203.0" layoutY="163.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D4" layoutX="243.0" layoutY="163.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E1" layoutX="123.0" layoutY="203.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E2" layoutX="163.0" layoutY="203.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E3" layoutX="203.0" layoutY="203.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E4" layoutX="243.0" layoutY="203.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F1" layoutX="123.0" layoutY="243.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F2" layoutX="163.0" layoutY="243.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F3" layoutX="203.0" layoutY="243.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F4" layoutX="243.0" layoutY="243.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G1" layoutX="123.0" layoutY="283.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G2" layoutX="163.0" layoutY="283.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G3" layoutX="203.0" layoutY="283.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G4" layoutX="243.0" layoutY="283.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A5" layoutX="326.0" layoutY="42.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A6" layoutX="366.0" layoutY="42.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A7" layoutX="406.0" layoutY="42.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A8" layoutX="446.0" layoutY="42.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B5" layoutX="326.0" layoutY="82.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B6" layoutX="366.0" layoutY="82.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B7" layoutX="406.0" layoutY="82.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B8" layoutX="446.0" layoutY="82.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C5" layoutX="326.0" layoutY="122.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C6" layoutX="366.0" layoutY="122.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C7" layoutX="406.0" layoutY="122.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C8" layoutX="446.0" layoutY="122.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D5" layoutX="326.0" layoutY="162.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D6" layoutX="366.0" layoutY="162.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D7" layoutX="406.0" layoutY="162.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D8" layoutX="446.0" layoutY="162.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E5" layoutX="326.0" layoutY="202.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E6" layoutX="366.0" layoutY="202.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E7" layoutX="406.0" layoutY="202.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E8" layoutX="446.0" layoutY="202.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F5" layoutX="326.0" layoutY="242.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F6" layoutX="366.0" layoutY="242.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F7" layoutX="406.0" layoutY="242.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F8" layoutX="446.0" layoutY="242.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G5" layoutX="326.0" layoutY="282.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G6" layoutX="366.0" layoutY="282.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G7" layoutX="406.0" layoutY="282.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G8" layoutX="446.0" layoutY="282.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A9" layoutX="534.0" layoutY="46.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A10" layoutX="574.0" layoutY="46.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A11" layoutX="614.0" layoutY="46.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="A12" layoutX="654.0" layoutY="46.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B9" layoutX="534.0" layoutY="86.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B10" layoutX="574.0" layoutY="86.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B11" layoutX="614.0" layoutY="86.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="B12" layoutX="654.0" layoutY="86.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C9" layoutX="534.0" layoutY="126.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C10" layoutX="574.0" layoutY="126.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C11" layoutX="614.0" layoutY="126.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="C12" layoutX="654.0" layoutY="126.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D9" layoutX="534.0" layoutY="166.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D10" layoutX="574.0" layoutY="166.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D11" layoutX="614.0" layoutY="166.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="D12" layoutX="654.0" layoutY="166.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E9" layoutX="534.0" layoutY="206.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E10" layoutX="574.0" layoutY="206.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E11" layoutX="614.0" layoutY="206.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="E12" layoutX="654.0" layoutY="206.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F9" layoutX="534.0" layoutY="246.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F10" layoutX="574.0" layoutY="246.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F11" layoutX="614.0" layoutY="246.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="F12" layoutX="654.0" layoutY="246.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G9" layoutX="534.0" layoutY="286.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G10" layoutX="574.0" layoutY="286.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G11" layoutX="614.0" layoutY="286.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="G12" layoutX="654.0" layoutY="286.0" mnemonicParsing="false" />
+                  <Label fx:id="ticketCount" layoutX="299.0" layoutY="345.0" text="0 Ticket(s)" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="408.0" layoutY="339.0" text="|" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalPrice" layoutX="425.0" layoutY="345.0" text="\$0.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="307.0" layoutY="397.0" mnemonicParsing="false" onAction="#pay" prefHeight="50.0" prefWidth="150.0" styleClass="buttons" stylesheets="@BoxStyle.css" text="Pay">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="70.0" styleClass="buttons" stylesheets="@BoxStyle.css" text="&lt; Back">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="698.0" layoutY="24.0" text="Balance:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="userBalance" layoutX="776.0" layoutY="24.0" text="\$420.69" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="52.0" layoutY="90.0" prefHeight="169.0" prefWidth="750.0" stylesheets="@styling.css">
+               <content>
+                  <TableView fx:id="movieScreeningTable" prefHeight="167.0" prefWidth="748.0">
+                    <columns>
+                      <TableColumn fx:id="theaterTitleColumn" prefWidth="75.0" text="Theater" />
+                      <TableColumn fx:id="screenNumberColumn" prefWidth="75.0" text="Screen No." />
+                        <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Date" />
+                        <TableColumn fx:id="timeColumn" prefWidth="75.0" text="Time" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: dimgray;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.TicketController">
+   <children>
+      <AnchorPane layoutX="140.0" layoutY="150.0" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="537.0" layoutY="73.0" text="Theater:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="theaterTitle" layoutX="652.0" layoutY="73.0" text="El Captain">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="138.0" text="Screen:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="screenNumber" layoutX="638.0" layoutY="138.0" text="4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="203.0" text="Movie:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="movieTitle" layoutX="628.0" layoutY="203.0" text="Oppenheimer">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="268.0" text="Date:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="screenDate" layoutX="611.0" layoutY="268.0" text="2024-5-10">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="333.0" text="Time:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="screenTime" layoutX="611.0" layoutY="333.0" text="9:00">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="398.0" text="Booked Seat(s):">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="bookedSeats" layoutX="752.0" layoutY="398.0" text="C6, C7">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="12.0" layoutY="4.0" prefHeight="20.0" prefWidth="972.0" />
+            <Separator layoutX="4.0" layoutY="13.0" orientation="VERTICAL" prefHeight="473.0" prefWidth="20.0" />
+            <Separator layoutX="12.0" layoutY="476.0" prefHeight="20.0" prefWidth="973.0" />
+            <Separator layoutX="975.0" layoutY="14.0" orientation="VERTICAL" prefHeight="472.0" prefWidth="20.0" />
+            <AnchorPane layoutX="24.0" layoutY="24.0" prefHeight="450.0" prefWidth="450.0">
+               <children>
+                  <ImageView fitHeight="448.0" fitWidth="448.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../sys-image/QR_code_for_mobile_English_Wikipedia.svg.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Separator layoutX="474.0" layoutY="14.0" orientation="VERTICAL" prefHeight="473.0" prefWidth="20.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#home" prefHeight="40.0" prefWidth="70.0" text="Home">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
